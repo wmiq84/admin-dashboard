@@ -12,7 +12,7 @@
 .container {
     height: 100%;
     display: grid;
-    grid-template-columns: .9fr 3fr 1.5fr;
+    grid-template-columns: .9fr 3fr 1fr;
     grid-template-rows: .5fr 2fr;
 }
 
@@ -237,9 +237,29 @@ button {
     border-bottom: none;
 }
 
+.triple img {
+    width: 2vw;
+} 
+
 .trending {
-    background-color: blue;
+    background-color: white;
     grid-row: 2 / 3;
+    border-radius: 12px;
+    margin-right: 1vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.triple {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 4vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    gap: 1vw;
 }
 
 /* .grid {
