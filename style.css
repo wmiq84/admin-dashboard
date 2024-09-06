@@ -12,8 +12,8 @@
 .container {
     height: 100%;
     display: grid;
-    grid-template-columns: .9fr 3fr 1fr;
-    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-columns: .9fr 3fr 1.5fr;
+    grid-template-rows: .5fr 2fr;
 }
 
 .header {
@@ -145,19 +145,75 @@ button {
 }
 
 .projects {
+    /* display: grid; */
+    background-color: aliceblue;
+    /* grid-column: 2 / 3;
+    grid-row: 2 / 4; */
+    /* background-color: aliceblue; */
+    /* display: grid;
     background-color: aliceblue;
     grid-column: 2 / 3;
     grid-row: 2 / 4;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 0.05fr 1fr;
+    overflow: auto; */
+    /* gap: 1.5vw; */
+    padding-left: 1vw;
+    padding-right: 10vw;
+
 }
 
+.grid {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    background-color: aliceblue;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 10vw;
+    row-gap: 2vw;
+}
+
+.your-projects {
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 30px 100px 150px 15px;
+    width: 115%;
+    border-left: 5px solid orange;
+    border-radius: 12px;
+
+    display: grid;
+    grid-template-rows: .2fr .2fr 1fr;
+}
+
+.icons {
+    max-width: 2vw;
+    display: grid;
+    gap: 20px;
+    grid-row: 3 / 4;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-self: center;
+    align-self: center; */
+}
+
+/* .icon {
+    display: grid;
+    justify-self: end;
+    align-self: end;
+} */
+
+
 .announcements {
-    background-color: antiquewhite;
+    background-color: red;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
 }
 
-.announcements {
-    background-color: beige;
+.trending {
+    background-color: blue;
     grid-column: 3 / 4;
     grid-row: 3 / 4;
 }
