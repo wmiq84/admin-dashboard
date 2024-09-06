@@ -184,19 +184,20 @@ button {
     width: 115%;
     border-left: 5px solid orange;
     border-radius: 12px;
-
     display: grid;
-    grid-template-rows: .2fr .2fr 1fr;
+    grid-template-rows: 1fr auto;
 }
 
 .icons {
-    max-width: 2vw;
+    width: 8vw;
     display: grid;
     gap: 20px;
     grid-row: 3 / 4;
     grid-template-columns: 1fr 1fr 1fr;
-    /* justify-self: center;
-    align-self: center; */
+    justify-self: end;
+    align-self: end;
+    margin-right: -70px;
+    margin-bottom: -110px;
 }
 
 /* .icon {
